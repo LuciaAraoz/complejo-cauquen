@@ -1,0 +1,480 @@
+/*INDEX*/
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
+*{
+    margin: 0;
+}
+ /*saco underline de los links del nav*/
+ a{
+    text-decoration: none;
+}
+/*Uso los 1300px que es la medida de mi pantalla inicial*/
+ @media only screen and (min-width:1300px){
+
+/* DE ACA PARA ABAJO NO BORRAR!!!!*/
+    /*GRID ORIGINAAAAL*/
+    header{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows:repeat(2,7rem);
+        }
+
+    nav{
+        grid-column: 3/10;
+    }
+   
+
+    .class__Header{
+        position: sticky;
+        top:0px;
+        padding: 0px;
+
+    }
+   
+ 
+    .title{
+        grid-row: 2/3;
+        grid-column: 4/9;
+        align-self: center;
+
+    }       
+    
+   
+
+    /*imagen*/
+.class__img{
+    border-radius: 10%;
+    grid-column: 1/2;
+    width: 100%;
+       
+}
+
+
+.class{  
+    list-style: none;
+    background-color: #eee1b1;
+    font-family: 'Quintessential', cursive;
+    font-weight: bold;  
+    display: flex;  
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+
+    }
+    li{
+        display: inline;
+        border-style: outset;
+        padding: 10px 30px 10px 30px;
+        align-self: flex-end;
+        
+       }
+
+    .class li a{
+        color:#4b3b04
+    }
+    .class li :hover{
+        color:aliceblue
+        }
+    .class__Header{
+        background-color: #eee1b1;
+        
+    }
+
+
+/*SECTION*/
+.section{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 500px repeat(auto);
+    background-color: #ece6cd;
+}
+
+.mision{
+    grid-column: 1/4;
+    border: solid #4b3b04;
+    padding: 3px 3px 3px 3px;
+    margin-left: 30px;
+}
+.mision h3{
+    font-size: 30px;
+}
+
+.vision{
+    grid-column: 10/13;
+    border: solid #4b3b04;
+    padding: 3px 3px 3px 3px;
+    margin-right: 20px;
+    }
+    .vision h3{
+         font-size: 30px;
+    }
+
+.imagen{
+    grid-column: 5/9;
+    grid-row: 1/2;
+}
+
+/*Parrafos*/
+p{  font-family:'Quintessential', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+
+
+/*FONDO CON IMAGEN*/
+    .class__Fondo{
+        background-image: url("../img/fondo.png");
+        
+    }
+
+
+/*CONTACTANOS*/
+form{
+    display: flex;
+    font-size: x-large;
+    font-family: 'Quintessential', cursive;
+    flex-direction: column;
+    display: block;
+    padding-left: 200px;
+    padding-right: 800px;
+    background-image:url("../img/fondo.png");
+    text-align: justify;
+    size: 500px;
+    
+}
+
+/*FOOTER*/
+
+.class__Footer{
+    background-color: #eee1b1;
+    font-family: 'Quintessential', cursive;
+    font-weight: bold;
+    text-align:start;
+
+}
+
+/*SERVICIOS*/
+table{
+    display: block;
+    margin-left: 400px;
+}
+#IDimagen{
+    margin-left: 450px;
+}
+
+
+#PrimerID{
+    display: block;
+    margin-left: 50px;
+    
+ 
+    
+}
+
+td{
+
+    font-family: 'Quintessential', cursive;
+    font-weight: bold;
+
+}
+th{
+
+    font-family: 'Quintessential', cursive;
+    font-size: 30px;
+
+}
+
+/*IFRAME*/
+iframe{
+    display: inline;
+    padding-left: 200px;
+    padding-right: 800px;
+    background-image:url(../img/nuevoback.jpeg)
+    }
+}
+
+/*-----------------------------------VISTA PARA MOBILE-------------------------------------------------*/
+
+@media only screen and (min-width:320px) and (max-width:480px)
+{   body{
+    width: 100%;
+    display: grid;
+    
+}
+    
+    header{
+        
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(12,1fr);
+                       
+        }
+
+    nav{
+        grid-column: 2/2;
+        grid-row: 2/3;
+       
+        }
+   
+
+    .class__Header{
+        position: sticky;
+        top:0px;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        }
+   
+ 
+    .title{
+        grid-row: 1/2;
+        grid-column: 2/12;
+        display: inline;
+        margin-left: 0px;
+        justify-self: center;
+        align-self: center;
+      
+
+    }       
+  
+
+    /*imagen*/
+.class__img{
+    border-radius: 10%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    width: 100px;
+    height: 100px;
+}
+.class{  
+    list-style: none;
+    background-color: #eee1b1;
+    font-family: 'Quintessential', cursive;
+    font-weight: bold;  
+    display: flex;  
+    justify-content: space-around;
+
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+        border-style: outset;
+        padding: 15px 10px 10px 15px;
+        align-self: flex-end;
+        margin-left: 20px;
+        
+       }
+
+    .class li a{
+        color:#4b3b04
+    }
+    .class li :hover{
+        color:aliceblue
+        }
+    .class__Header{
+        background-color: #eee1b1;
+        display: grid;
+        width: 100%;
+        height: 100%;
+    }
+
+
+/*SECTION*/
+.section{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6,1fr);
+    background-color: #ece6cd;
+    width: 100%;
+}
+
+.mision{
+    grid-column: 2/12;
+    grid-row: 1/2;
+    border: solid #4b3b04;
+    margin-top: 40px;
+    padding: 3px 3px 3px 3px;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+}
+.mision h3{
+    font-size: 35px;
+    text-decoration: underline solid #4b3b04;
+    }
+
+.vision{
+    grid-column: 2/12;
+    grid-row: 5/6;
+    border: solid #4b3b04;
+    padding: 3px 3px 3px 3px;
+    margin-right: 20px;
+    width: 100%;
+    height: 100%;
+    }
+    .vision h3{
+         font-size: 35px;
+         text-decoration: underline solid #4b3b04;
+    }
+
+.imagen{
+    grid-column: 2/12;
+    grid-row: 3/4;
+    width: 20px;
+    height: 60px;
+    margin: 0px;
+}
+.imagenindex{
+    width: 100%;
+    grid-row: 3/5;
+    grid-column: 2/12;
+}
+
+
+/*Parrafos*/
+p{  font-family:'Quintessential', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+
+
+/*FONDO CON IMAGEN*/
+    .class__Fondo{
+        background-image: url("../img/fondo.png");
+        
+    }
+
+
+/*CONTACTANOS*/
+form{
+    display: flex;
+    font-size: x-large;
+    font-family: 'Quintessential', cursive;
+    flex-direction: column;
+    display: block;
+    padding-left: 200px;
+    padding-right: 800px;
+    background-image:url("../img/fondo.png");
+    text-align: justify;
+    size: 500px;
+    
+}
+
+/*----------GALERIA-------*/
+main{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(6,1fr);
+    background-image: url("../img/fondo.png");
+        
+}
+.galeria
+{ grid-column: 2/12;
+    grid-row: 1/2;
+    border: solid #4b3b04;
+    width: 100%;
+    height:1fr;
+        
+}
+img{
+    width: 100%;
+    border-radius: 10%;
+    
+}
+
+.galeria1{
+    grid-column: 2/12;
+    grid-row: 2/3;
+    border: solid #4b3b04;
+    width: 100%;
+    height:1fr;
+}
+.galeria2{
+    grid-column: 2/12;
+    grid-row: 3/4;
+    border: solid #4b3b04;
+    width: 100%;
+    height:1fr;
+
+}
+.galeria3{
+    grid-column: 2/12;
+    grid-row:4/5 ;
+    border: solid #4b3b04;
+    width: 100%;
+    height:1fr;
+}
+.galeria4{
+    grid-column: 2/12;
+    grid-row:5/6 ;
+    border: solid #4b3b04;
+    width: 100%;
+    height:1fr;
+}
+.galeria5{
+    grid-column: 2/12;
+    grid-row: 6/7;
+    border: solid #4b3b04;
+    width: 100%;
+    height:1fr;
+}
+.galeria6{
+    grid-column: 2/12;
+    grid-row: 7/8 ;
+    border: solid #4b3b04;
+    width: 100%;
+    height:1fr;
+}
+
+
+
+/*FOOTER*/
+
+.class__Footer{
+    background-color: #eee1b1;
+    font-family: 'Quintessential', cursive;
+    font-weight: bold;
+    text-align:start;
+
+}
+
+/*SERVICIOS*/
+table{
+    display: block;
+    margin-left: 400px;
+}
+#IDimagen{
+    margin-left: 450px;
+}
+
+#PrimerID{
+    display: block;
+    margin: 0px 0px 0px 80px;
+ 
+    
+}
+
+td{
+
+    font-family: 'Quintessential', cursive;
+    font-weight: bold;
+
+}
+th{
+
+    font-family: 'Quintessential', cursive;
+    font-size: 30px;
+
+}
+
+/*IFRAME*/
+iframe{
+    display: inline;
+    padding-left: 200px;
+    padding-right: 800px;
+    background-image:url(../img/nuevoback.jpeg)
+    }
+
+}
